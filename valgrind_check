@@ -1,0 +1,5 @@
+#!/bin/bash
+	
+	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./util
+	valgrind --leak-check=full --track-origins=yes  ./tema1 256 input.in
+
